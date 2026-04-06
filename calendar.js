@@ -21,6 +21,11 @@ for (const ev of calendarData.events) {
   (evMap[ev.date] ??= []).push(ev);
 }
 
+function teamLabel(teamNum) {
+  const def = calendarData.teams?.[teamNum];
+  return def ? `${def.name} (${def.level})` : `Furuby ${teamNum}`;
+}
+
 function buildEventCell(events) {
   const td = document.createElement('td');
   td.className = 'c-ev';
@@ -50,7 +55,7 @@ function buildEventCell(events) {
       if (!ev.time) label.classList.add('unconfirmed');
 
     } else if (ev.type === 'series') {
-      const f = `Furuby ${ev.team}`;
+      const f = teamLabel(ev.team);
       text = ev.home ? `${f} – ${ev.opponent}` : `${ev.opponent} – ${f}`;
       cls  = ev.team === 1 ? 'ev-series1' : 'ev-series2';
       if (!ev.time) label.classList.add('unconfirmed');
@@ -73,14 +78,22 @@ function buildEventCell(events) {
 
     td.appendChild(line);
 
-    // Sub-line for A-lag: only shown when relevant info exists
+    // Location sub-line for series matches
+    if (ev.type === 'series' && ev.location) {
+      const loc = document.createElement('span');
+      loc.className = 'ev-location';
+      loc.textContent = ev.location;
+      td.appendChild(loc);
+    }
+
+    // Info sub-line for A-lag matches
     if (ev.type === 'match-a') {
       const parts = [];
       if (ev.trainingCancelled) parts.push('Träning inställd');
       if (ev.bollkallar)        parts.push(`Bollkallar: ${ev.bollkallar}`);
       if (parts.length) {
         const info = document.createElement('span');
-        info.className = 'ev-line ev-match-a-info';
+        info.className = 'ev-location';
         info.textContent = parts.join(' · ');
         td.appendChild(info);
       }
