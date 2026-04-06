@@ -39,7 +39,7 @@ const calendarData = {
     { date: "2026-04-15", type: "training", time: "17:30-18:45", title: "Träning gympasalen" },  // O v16
     { date: "2026-04-16", type: "training", time: "17:30-18:45", title: "Träning Grusplanen" },  // T
     { date: "2026-04-19", type: "cup",      title: "Tråddragarcupen", subtitle: "P14" },
-    { date: "2026-04-20", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // M
+    { date: "2026-04-20", type: "training", time: "17:30-18:45", title: "Träning Grusplanen" },  // M
     { date: "2026-04-21", type: "match-a",  opponent: "Konga SK",          time: "18:45", bollkallar: null },
     { date: "2026-04-23", type: "training", time: "17:30-18:45", title: "Träning Grusplanen" },  // T (sista)
     { date: "2026-04-25", type: "series",   team: 1, home: false, opponent: "Östers IF 2",       time: "10:00", location: "Sportfältet Teleborg 1, Växjö" },
