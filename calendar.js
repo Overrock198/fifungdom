@@ -42,7 +42,7 @@ function buildEventCell(events) {
     let cls  = '';
 
     if (ev.type === 'training') {
-      text = 'Träning';
+      text = ev.title || 'Träning';
       cls  = 'ev-training';
 
     } else if (ev.type === 'holiday') {

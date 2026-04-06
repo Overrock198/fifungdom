@@ -27,6 +27,7 @@ const calendarData = {
 
   events: [
     // ── April ──────────────────────────────────────────────────────────
+    { date: "2026-04-01", type: "training", time: "17:30-18:45", title: "Träning gympasalen" },
     { date: "2026-04-02", type: "training", time: "17:30-18:45" },
     { date: "2026-04-03", type: "holiday",  title: "Långfredagen" },
     { date: "2026-04-05", type: "holiday",  title: "Påskdagen" },
@@ -34,6 +35,7 @@ const calendarData = {
     { date: "2026-04-07", type: "training", time: "17:30-18:45" },
     { date: "2026-04-09", type: "training", time: "17:30-18:45" },
     { date: "2026-04-14", type: "training", time: "17:30-18:45" },
+    { date: "2026-04-15", type: "training", time: "17:30-18:45", title: "Träning gympasalen" },
     { date: "2026-04-16", type: "training", time: "17:30-18:45" },
     { date: "2026-04-19", type: "cup",      title: "Tråddragarcupen", subtitle: "P14" },
     { date: "2026-04-21", type: "match-a",  opponent: "Konga SK",          time: "18:45", bollkallar: null },
@@ -42,6 +44,7 @@ const calendarData = {
     { date: "2026-04-26", type: "series",   team: 2, home: true,  opponent: "Hovshaga AIF 8",    time: "10:00", location: "Furuvallen, Furuby", domare: null },
     { date: "2026-04-27", type: "training", time: "17:30-18:45" },
     { date: "2026-04-28", type: "match-a",  opponent: "Vissefjärda GIF",   time: "19:00", bollkallar: null },
+    { date: "2026-04-29", type: "training", time: "17:30-18:45", title: "Träning gympasalen" },
     { date: "2026-04-30", type: "training", time: "17:30-18:45" },
 
     // ── Maj ────────────────────────────────────────────────────────────
