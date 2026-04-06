@@ -94,8 +94,7 @@ const calendarData = {
     { date: "2026-06-23", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T
     { date: "2026-06-24", type: "match-a",  opponent: "Johansfors IF",     time: "19:00", bollkallar: null },
     { date: "2026-06-25", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T
-    { date: "2026-06-27", type: "cup",      title: "Norra-cupen", team: 2, location: "Åbo idrottsplats" },
-    { date: "2026-06-27", type: "cup",      title: "Norra-cupen", team: 1, location: "Åbo idrottsplats" },
+    { date: "2026-06-27", type: "cup",      title: "Norra-cupen", subtitle: "P15/16 + P14", team: 2, location: "Åbo idrottsplats" },
     { date: "2026-06-29", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // M
     { date: "2026-06-30", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T
   ]
