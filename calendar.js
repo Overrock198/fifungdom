@@ -78,20 +78,20 @@ function buildEventCell(events) {
 
     td.appendChild(line);
 
-    // Sub-lines for series matches
-    if (ev.type === 'series') {
-      if (ev.location) {
-        const loc = document.createElement('span');
-        loc.className = 'ev-location';
-        loc.textContent = ev.location;
-        td.appendChild(loc);
-      }
-      if (ev.home && ev.domare) {
-        const dom = document.createElement('span');
-        dom.className = 'ev-location';
-        dom.textContent = `Domare: ${ev.domare}`;
-        td.appendChild(dom);
-      }
+    // Location sub-line (series and cup)
+    if (ev.location) {
+      const loc = document.createElement('span');
+      loc.className = 'ev-location';
+      loc.textContent = ev.location;
+      td.appendChild(loc);
+    }
+
+    // Domare sub-line for home series matches
+    if (ev.type === 'series' && ev.home && ev.domare) {
+      const dom = document.createElement('span');
+      dom.className = 'ev-location';
+      dom.textContent = `Domare: ${ev.domare}`;
+      td.appendChild(dom);
     }
 
     // Info sub-line for A-lag matches
