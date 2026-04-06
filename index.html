@@ -4,118 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Säsongsplanering – Furuby IF 2026 Del 1</title>
-  <style>
-    :root {
-      --club-blue: #2444AE;
-      --club-gold: #C88D00;
-      --series1:   #1a56c4;
-      --series2:   #c0720a;
-      --match-a-bg:#f0f0f0;
-      --cup:       #2a8c4a;
-      --red:       #c0392b;
-      --week:      #aaa;
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      color: #222;
-      background: #fff;
-      padding: 20px 24px 40px;
-      line-height: 1.3;
-    }
-
-    /* ── Part navigation ─────────────────────────────────────────────── */
-    .part-nav {
-      display: flex;
-      gap: 5px;
-      align-items: center;
-      margin-top: 4px;
-    }
-    .part-nav a {
-      padding: 2px 9px;
-      border: 1px solid #ccc;
-      border-radius: 3px;
-      text-decoration: none;
-      color: #555;
-      font-size: 11px;
-      font-weight: normal;
-    }
-    .part-nav a.active {
-      background: #222;
-      color: #fff;
-      border-color: #222;
-    }
-
-    /* ── Header ─────────────────────────────────────────────────────── */
-    .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 3px solid #000;
-      padding-bottom: 12px;
-      margin-bottom: 18px;
-    }
-    .header h1  { font-size: 22px; font-weight: 900; text-transform: uppercase; letter-spacing: .5px; }
-    .header sub { display: block; font-size: 12px; color: #666; margin-top: 3px; font-weight: normal; }
-
-/* ── Calendar grid ───────────────────────────────────────────────── */
-    .calendar-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 28px;
-    }
-    @media (max-width: 860px) { .calendar-grid { grid-template-columns: 1fr; } }
-
-    /* ── Month ───────────────────────────────────────────────────────── */
-    .month-title {
-      font-size: 14px;
-      font-weight: 900;
-      text-transform: uppercase;
-      letter-spacing: .5px;
-      border-bottom: 2px solid #000;
-      padding-bottom: 4px;
-      margin-bottom: 5px;
-    }
-
-    /* ── Table ───────────────────────────────────────────────────────── */
-    table { width: 100%; border-collapse: collapse; font-size: 11.5px; }
-    tr { border-bottom: 1px solid #eee; }
-    tr.week-end { border-bottom: 2px solid #ccc; }
-    tr.match-a-row { background: var(--match-a-bg); }
-    td { padding: 3px 3px; vertical-align: top; }
-
-    .c-num  { width: 18px; font-weight: bold; white-space: nowrap; padding-right: 1px; }
-    .c-day  { width: 14px; color: #999; white-space: nowrap; }
-    .c-ev   { }
-    .c-time { width: 72px; text-align: right; font-size: 10.5px; color: #555; white-space: nowrap; }
-    .c-week { width: 28px; text-align: right; font-size: 10px; font-weight: bold; color: var(--week); white-space: nowrap; }
-
-    .red-day .c-num, .red-day .c-day { color: var(--red); }
-
-    .ev-training  { color: #333; }
-    .ev-holiday   { color: var(--red); }
-    .ev-series1   { color: var(--series1); font-weight: 600; }
-    .ev-series2   { color: var(--series2); font-weight: 600; }
-    .ev-match-a   { font-weight: 700; }
-    .ev-cup       { color: var(--cup); font-weight: 600; }
-    .unconfirmed  { font-style: italic; }
-    .ev-line { display: block; }
-    .ev-line + .ev-line { margin-top: 1px; }
-    .ev-match-a-info { font-size: 10px; font-weight: normal; color: #777; }
-
-    /* ── Print ───────────────────────────────────────────────────────── */
-    @media print {
-      @page { size: A4 landscape; margin: 12mm; }
-      .part-nav { display: none; }
-      body { padding: 0; }
-      .calendar-grid { gap: 16px; }
-      table { font-size: 10px; }
-      tr { border-bottom-color: #ddd; }
-      .c-week { color: #bbb; }
-    }
-  </style>
+  <link rel="stylesheet" href="calendar.css">
 </head>
 <body>
 
@@ -132,7 +21,6 @@
   </div>
   <img src="Furubylogga.svg" height="90" alt="Furuby IF">
 </div>
-
 
 <div id="calendar" class="calendar-grid"></div>
 

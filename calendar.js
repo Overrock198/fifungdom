@@ -26,8 +26,12 @@ function buildEventCell(events) {
   td.className = 'c-ev';
 
   for (const ev of events) {
-    const span = document.createElement('span');
-    span.className = 'ev-line';
+    // Main event line
+    const line = document.createElement('span');
+    line.className = 'ev-line';
+
+    const label = document.createElement('span');
+    label.className = 'ev-label';
 
     let text = '';
     let cls  = '';
@@ -43,40 +47,45 @@ function buildEventCell(events) {
     } else if (ev.type === 'cup') {
       text = ev.subtitle ? `${ev.title} (${ev.subtitle})` : ev.title;
       cls  = 'ev-cup';
-      if (!ev.time) span.classList.add('unconfirmed');
+      if (!ev.time) label.classList.add('unconfirmed');
 
     } else if (ev.type === 'series') {
       const f = `Furuby ${ev.team}`;
       text = ev.home ? `${f} – ${ev.opponent}` : `${ev.opponent} – ${f}`;
       cls  = ev.team === 1 ? 'ev-series1' : 'ev-series2';
-      if (!ev.time) span.classList.add('unconfirmed');
+      if (!ev.time) label.classList.add('unconfirmed');
 
     } else if (ev.type === 'match-a') {
       text = `A-LAGET: Furuby – ${ev.opponent}`;
       cls  = 'ev-match-a';
     }
 
-    span.classList.add(cls);
-    span.textContent = text;
-    td.appendChild(span);
+    label.classList.add(cls);
+    label.textContent = text;
+    line.appendChild(label);
 
+    if (ev.time) {
+      const t = document.createElement('span');
+      t.className = 'ev-time';
+      t.textContent = ev.time;
+      line.appendChild(t);
+    }
+
+    td.appendChild(line);
+
+    // Sub-line for A-lag: only shown when relevant info exists
     if (ev.type === 'match-a') {
-      const info = document.createElement('span');
-      info.className = 'ev-line ev-match-a-info';
-      const parts = ['Träning inställd'];
-      if (ev.bollkallar) parts.push(`Bollkallar: ${ev.bollkallar}`);
-      info.textContent = parts.join(' · ');
-      td.appendChild(info);
+      const parts = [];
+      if (ev.trainingCancelled) parts.push('Träning inställd');
+      if (ev.bollkallar)        parts.push(`Bollkallar: ${ev.bollkallar}`);
+      if (parts.length) {
+        const info = document.createElement('span');
+        info.className = 'ev-line ev-match-a-info';
+        info.textContent = parts.join(' · ');
+        td.appendChild(info);
+      }
     }
   }
-  return td;
-}
-
-function buildTimeCell(events) {
-  const td = document.createElement('td');
-  td.className = 'c-time';
-  const withTime = events.find(e => e.time);
-  if (withTime) td.textContent = withTime.time;
   return td;
 }
 
@@ -106,13 +115,12 @@ function renderMonth(yearMonth) {
     const showWeek = (dow === 1 || d === 1) && week !== lastWeek;
     if (showWeek) lastWeek = week;
 
-    const isRed    = isSun || events.some(e => e.type === 'holiday' || e.holiday === true);
-    const hasMatchA = events.some(e => e.type === 'match-a');
+    const isRed = isSun || events.some(e => e.type === 'holiday' || e.holiday === true);
 
     const tr = document.createElement('tr');
     if (isSun || isSat) tr.classList.add('week-end');
+    if (isSun)          tr.classList.add('sunday');
     if (isRed)          tr.classList.add('red-day');
-    if (hasMatchA)      tr.classList.add('match-a-row');
 
     const tdNum = document.createElement('td');
     tdNum.className = 'c-num';
@@ -125,7 +133,6 @@ function renderMonth(yearMonth) {
     tr.appendChild(tdDay);
 
     tr.appendChild(buildEventCell(events));
-    tr.appendChild(buildTimeCell(events));
 
     const tdWeek = document.createElement('td');
     tdWeek.className = 'c-week';

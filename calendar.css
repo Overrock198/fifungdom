@@ -1,0 +1,129 @@
+:root {
+  --series1:  #1a56c4;   /* Furuby 1 – blå   */
+  --series2:  #c0720a;   /* Furuby 2 – orange */
+  --cup:      #2a8c4a;
+  --red:      #c0392b;
+  --week:     #aaa;
+  --sunday-bg:#f4f4f4;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #222;
+  background: #fff;
+  padding: 20px 24px 40px;
+  line-height: 1.3;
+}
+
+/* ── Part navigation ─────────────────────────────────────────────── */
+.part-nav {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  margin-top: 4px;
+}
+.part-nav a {
+  padding: 2px 9px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  text-decoration: none;
+  color: #555;
+  font-size: 11px;
+  font-weight: normal;
+}
+.part-nav a.active {
+  background: #222;
+  color: #fff;
+  border-color: #222;
+}
+
+/* ── Header ──────────────────────────────────────────────────────── */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #000;
+  padding-bottom: 12px;
+  margin-bottom: 18px;
+}
+.header h1  { font-size: 22px; font-weight: 900; text-transform: uppercase; letter-spacing: .5px; }
+.header sub { display: block; font-size: 12px; color: #666; margin-top: 3px; font-weight: normal; }
+
+/* ── Calendar grid ───────────────────────────────────────────────── */
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+@media (max-width: 860px) { .calendar-grid { grid-template-columns: 1fr; } }
+
+/* ── Month ───────────────────────────────────────────────────────── */
+.month-title {
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  border-bottom: 2px solid #000;
+  padding-bottom: 4px;
+  margin-bottom: 5px;
+}
+
+/* ── Table ───────────────────────────────────────────────────────── */
+table { width: 100%; border-collapse: collapse; font-size: 11.5px; }
+tr    { border-bottom: 1px solid #eee; }
+tr.week-end { border-bottom: 2px solid #ccc; }
+tr.sunday   { background: var(--sunday-bg); }
+td    { padding: 3px 3px; vertical-align: top; }
+
+.c-num  { width: 18px; font-weight: bold; white-space: nowrap; padding-right: 1px; }
+.c-day  { width: 14px; color: #999; white-space: nowrap; }
+.c-ev   { }
+.c-week { width: 28px; text-align: right; font-size: 10px; font-weight: bold;
+          color: var(--week); white-space: nowrap; }
+
+.red-day .c-num,
+.red-day .c-day { color: var(--red); }
+
+/* ── Event lines ─────────────────────────────────────────────────── */
+.ev-line {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  min-width: 0;          /* allow flex children to shrink */
+}
+.ev-line + .ev-line { margin-top: 1px; }
+
+.ev-label { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ev-time  { font-size: 10.5px; color: #555; flex-shrink: 0; white-space: nowrap; }
+
+/* match-a info sub-line: not flex, just a plain block */
+.ev-match-a-info {
+  display: block;
+  font-size: 10px;
+  color: #777;
+  margin-top: 0;
+}
+
+/* ── Event type colours ──────────────────────────────────────────── */
+.ev-training { color: #333; }
+.ev-holiday  { color: var(--red); }
+.ev-series1  { color: var(--series1); font-weight: 600; }
+.ev-series2  { color: var(--series2); font-weight: 600; }
+.ev-match-a  { font-weight: 700; }
+.ev-cup      { color: var(--cup); font-weight: 600; }
+
+.unconfirmed { font-style: italic; }
+
+/* ── Print ───────────────────────────────────────────────────────── */
+@media print {
+  @page { size: A4 landscape; margin: 12mm; }
+  .part-nav { display: none; }
+  body { padding: 0; }
+  .calendar-grid { gap: 16px; }
+  table { font-size: 10px; }
+  tr { border-bottom-color: #ddd; }
+  tr.sunday { background: #efefef; }
+  .c-week { color: #bbb; }
+}
