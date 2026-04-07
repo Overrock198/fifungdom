@@ -40,12 +40,12 @@ const calendarData = {
     { date: "2026-04-16", type: "training", time: "17:30-18:45", title: "Träning Grusplanen" },  // T
     { date: "2026-04-19", type: "cup",      title: "Tråddragarcupen", subtitle: "P14", location: "Töllstorpsområdet, Gnosjö" },
     { date: "2026-04-20", type: "training", time: "17:30-18:45", title: "Träning Grusplanen" },  // M
-    { date: "2026-04-21", type: "match-a",  opponent: "Konga SK",          time: "18:45", bollkallar: null },
+    { date: "2026-04-21", type: "match-a",  opponent: "Konga SK",          time: "18:45", bollkallar: null, trainingCancelled:true },
     { date: "2026-04-23", type: "training", time: "17:30-18:45", title: "Träning Grusplanen" },  // T (sista)
     { date: "2026-04-25", type: "series",   team: 1, home: false, opponent: "Östers IF 2",       time: "10:00", location: "Sportfältet Teleborg 1, Växjö" },
     { date: "2026-04-26", type: "series",   team: 2, home: true,  opponent: "Hovshaga AIF 8",    time: "10:00", location: "Furuvallen, Furuby", domare: null },
     { date: "2026-04-27", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // M
-    { date: "2026-04-28", type: "match-a",  opponent: "Vissefjärda GIF",   time: "19:00", bollkallar: null },
+    { date: "2026-04-28", type: "match-a",  opponent: "Vissefjärda GIF",   time: "19:00", bollkallar: null, trainingCancelled: true },
     { date: "2026-04-29", type: "training", time: "17:30-18:45", title: "Träning Gympasalen" },  // O v18
     { date: "2026-04-30", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T
 
@@ -55,7 +55,7 @@ const calendarData = {
     { date: "2026-05-03", type: "series",   team: 1, home: true,  opponent: "Alvesta GOIF 1",    time: "10:00", location: "Furuvallen, Furuby", domare: null },
     { date: "2026-05-04", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // M
     { date: "2026-05-05", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T
-    { date: "2026-05-07", type: "match-a",  opponent: "Emmaboda IS",       time: "19:00", bollkallar: null },
+    { date: "2026-05-07", type: "match-a",  opponent: "Emmaboda IS",       time: "19:00", bollkallar: null, trainingCancelled: true },
     { date: "2026-05-09", type: "series",   team: 1, home: false, opponent: "Växjö Norra IF 2",  time: "10:00", location: "Åbo Idrottsplats 22, Växjö" },
     { date: "2026-05-10", type: "series",   team: 2, home: true,  opponent: "Älmhults IF 4",     time: "10:00", location: "Furuvallen, Furuby", domare: null },
     { date: "2026-05-11", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // M
@@ -76,7 +76,7 @@ const calendarData = {
 
     // ── Juni ───────────────────────────────────────────────────────────
     { date: "2026-06-01", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // M
-    { date: "2026-06-02", type: "match-a",  opponent: "Flerohopps GoIF",   time: "19:00", bollkallar: null },
+    { date: "2026-06-02", type: "match-a",  opponent: "Flerohopps GoIF",   time: "19:00", bollkallar: null, trainingCancelled: true },
     { date: "2026-06-04", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T
     { date: "2026-06-06", type: "series",   team: 2, home: true,  opponent: "Ingelstads IK 3",   time: "14:00", location: "Furuvallen, Furuby", domare: null, holiday: true },
     { date: "2026-06-07", type: "series",   team: 1, home: false, opponent: "Hovshaga AIF 5",    time: "12:00", location: "Hagavallen 1, Växjö" },
