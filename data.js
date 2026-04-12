@@ -72,7 +72,7 @@ const calendarData = {
     { date: "2026-05-26", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T
     { date: "2026-05-28", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T
     { date: "2026-05-31", type: "series",   team: 1, home: true,  opponent: "Värnamo Södra FF 2", location: "Furuvallen, Furuby", domare: null },
-    { date: "2026-05-31", type: "series",   team: 2, home: false, opponent: "Moheda IF 1" },
+    { date: "2026-05-31", type: "series",   team: 2, home: false, opponent: "Moheda IF 1", location: "Moheda IP 3, Moheda", time: "14:00" },
 
     // ── Juni ───────────────────────────────────────────────────────────
     { date: "2026-06-01", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // M
