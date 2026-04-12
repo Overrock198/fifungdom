@@ -66,12 +66,12 @@ const calendarData = {
     { date: "2026-05-18", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // M
     { date: "2026-05-19", type: "match-a",  opponent: "Nöbbele BK",        time: "19:00", bollkallar: null, trainingCancelled: true },
     { date: "2026-05-21", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T
-    { date: "2026-05-22", type: "series",   team: 1, home: false, opponent: "Hovshaga AIF 3",    time: "19:00" },
+    { date: "2026-05-22", type: "series",   team: 1, home: false, opponent: "Hovshaga AIF 3", location:""    time: "19:00" },
     { date: "2026-05-23", type: "series",   team: 2, home: true,  opponent: "Gransholms IF 1",   time: "14:00", location: "Furuvallen, Furuby", domare: null },
     { date: "2026-05-25", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // M
     { date: "2026-05-26", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T
     { date: "2026-05-28", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T
-    { date: "2026-05-31", type: "series",   team: 1, home: true,  opponent: "Värnamo Södra FF 2", location: "Furuvallen, Furuby", domare: null },
+    { date: "2026-05-30", type: "series",   team: 1, home: true,  opponent: "Värnamo Södra FF 2", location: "Furuvallen, Furuby", domare: null ; time:"10:00"},
     { date: "2026-05-31", type: "series",   team: 2, home: false, opponent: "Moheda IF 1", location: "Moheda IP 3, Moheda", time: "14:00" },
 
     // ── Juni ───────────────────────────────────────────────────────────
@@ -84,7 +84,7 @@ const calendarData = {
     { date: "2026-06-09", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T
     { date: "2026-06-11", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T
     { date: "2026-06-14", type: "series",   team: 1, home: true,  opponent: "IFK Grimslöv 1",    location: "Furuvallen, Furuby", domare: null },
-    { date: "2026-06-14", type: "series",   team: 2, home: false, opponent: "Lenhovda IF 2" },
+    { date: "2026-06-14", type: "series",   team: 2, home: false, opponent: "Rottne IF 2" },
     { date: "2026-06-15", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // M
     { date: "2026-06-16", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T
     { date: "2026-06-18", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T
