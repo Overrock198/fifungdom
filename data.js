@@ -66,7 +66,7 @@ const calendarData = {
     { date: "2026-05-18", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // M
     { date: "2026-05-19", type: "match-a",  opponent: "Nöbbele BK",        time: "19:00", bollkallar: null, trainingCancelled: true },
     { date: "2026-05-21", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T
-    { date: "2026-05-22", type: "series",   team: 1, home: false, opponent: "Hovshaga AIF 3", location:""    time: "19:00" },
+    { date: "2026-05-22", type: "series",   team: 1, home: false, opponent: "Hovshaga AIF 3", location:"",   time: "19:00" },
     { date: "2026-05-23", type: "series",   team: 2, home: true,  opponent: "Gransholms IF 1",   time: "14:00", location: "Furuvallen, Furuby", domare: null },
     { date: "2026-05-25", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // M
     { date: "2026-05-26", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T
