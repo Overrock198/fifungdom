@@ -15,7 +15,9 @@ const calendarData = {
 
     // ── Augusti ────────────────────────────────────────────────────────
     { date: "2026-08-01", type: "cup",     title: "Bullerby cup", subtitle: "P14, dag 3" },
-    { date: "2026-08-15", type: "match-a", opponent: "Flygsfors-Gadd. IF", time: "12:00", bollkallar: null },
+    { date: "2026-08-15", type: "cup", title: "Per-Åke Tersmark Cup", subtitle: "Dag 1" },
+    { date: "2026-08-16", type: "cup", title: "Per-Åke Tersmark Cup", subtitle: "Dag 2" },
+    { date: "2026-08-16", type: "match-a", opponent: "Flygsfors-Gadd. IF", time: "16:00", bollkallar: null },
     { date: "2026-08-24", type: "match-a", opponent: "Skruvs IF",          time: "18:15", bollkallar: null },
 
     // ── September ──────────────────────────────────────────────────────
