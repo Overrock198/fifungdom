@@ -61,6 +61,7 @@ const calendarData = {
     { date: "2026-05-11", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // M
     { date: "2026-05-12", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T
     { date: "2026-05-14", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T
+    { date: "2026-05-14", type: "holiday",  title: "Kristi himmelfärdsdag" },
     { date: "2026-05-16", type: "series",   team: 1, home: true,  opponent: "Lessebo GOIF 1",    time: "10:00", location: "Furuvallen, Furuby", domare: null },
     { date: "2026-05-17", type: "series",   team: 2, home: false, opponent: "Hovmantorp GoIF 2", time: "17:30", location: "Hovmantorps IP 2, Hovmantorp" },
     { date: "2026-05-18", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // M
