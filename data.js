@@ -57,7 +57,7 @@ const calendarData = {
     { date: "2026-05-05", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T
     { date: "2026-05-07", type: "match-a",  opponent: "Emmaboda IS",       time: "19:00", bollkallar: null, trainingCancelled: true },
     { date: "2026-05-09", type: "series",   team: 1, home: false, opponent: "Växjö Norra IF 2",  time: "10:00", location: "Åbo Idrottsplats 22, Växjö" },
-    { date: "2026-05-10", type: "series",   team: 2, home: true,  opponent: "Älmhults IF 4",     time: "10:00", location: "Furuvallen, Furuby", domare: null },
+    { date: "2026-05-10", type: "series",   team: 2, home: true,  opponent: "Älmhults IF 4",     time: "10:00", location: "Furuvallen, Furuby", domare: "Ludwig A" },
     { date: "2026-05-11", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // M
     { date: "2026-05-12", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T
     { date: "2026-05-14", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T
