@@ -16,6 +16,7 @@ const calendarData = {
   //   series    – seriematch (team: 1 or 2, home: true/false, opponent, location)
   //   match-a   – A-lagsmatch hemma, Div 6 Emmaboda Herr (opponent: string)
   //   cup       – cup (title required, subtitle optional)
+  //   notice    – informationsnotis, t.ex. inställd träning (title required)
   //
   // Optional fields on any event:
   //   time: "18:00"           – bekräftad starttid
@@ -47,7 +48,7 @@ const calendarData = {
     { date: "2026-04-27", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // M
     { date: "2026-04-28", type: "match-a",  opponent: "Vissefjärda GIF",   time: "19:00", bollkallar: null, trainingCancelled: true },
     { date: "2026-04-29", type: "training", time: "17:30-18:45", title: "Träning Gympasalen" },  // O v18
-    { date: "2026-04-30", trainingCancelled: true},  // T
+    { date: "2026-04-30", type: "notice", title: "Träning inställd – Valborg" },
 
     // ── Maj ────────────────────────────────────────────────────────────
     { date: "2026-05-01", type: "holiday",  title: "Första maj" },
