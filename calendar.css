@@ -3,6 +3,7 @@
   --series2:  #c0720a;   /* Furuby 2 – orange */
   --cup:      #2a8c4a;
   --red:      #c0392b;
+  --notice:   #0e7490;
   --week:     #aaa;
   --sunday-bg:#f4f4f4;
 }
@@ -106,6 +107,7 @@ td    { padding: 3px 3px; vertical-align: top; }
 .ev-series2  { color: var(--series2); font-weight: 600; }
 .ev-match-a  { font-weight: 700; }
 .ev-cup      { color: var(--cup); font-weight: 600; }
+.ev-notice   { color: var(--notice); font-style: italic; }
 
 .unconfirmed { font-style: italic; }
 

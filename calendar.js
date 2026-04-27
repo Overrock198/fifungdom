@@ -63,6 +63,10 @@ function buildEventCell(events) {
     } else if (ev.type === 'match-a') {
       text = `A-LAGET: Furuby – ${ev.opponent}`;
       cls  = 'ev-match-a';
+
+    } else if (ev.type === 'notice') {
+      text = ev.title;
+      cls  = 'ev-notice';
     }
 
     label.classList.add(cls);
