@@ -47,7 +47,7 @@ const calendarData = {
     { date: "2026-04-27", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // M
     { date: "2026-04-28", type: "match-a",  opponent: "Vissefjärda GIF",   time: "19:00", bollkallar: null, trainingCancelled: true },
     { date: "2026-04-29", type: "training", time: "17:30-18:45", title: "Träning Gympasalen" },  // O v18
-    { date: "2026-04-30", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T
+    { date: "2026-04-30", type: "training", time: "17:30-18:45", trainingCancelled: true},  // T
 
     // ── Maj ────────────────────────────────────────────────────────────
     { date: "2026-05-01", type: "holiday",  title: "Första maj" },
