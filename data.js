@@ -80,12 +80,12 @@ const calendarData = {
     { date: "2026-06-01", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // M
     { date: "2026-06-02", type: "match-a",  opponent: "Flerohopps GoIF",   time: "19:00", bollkallar: null, trainingCancelled: true },
     { date: "2026-06-04", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T
-    { date: "2026-06-06", type: "series",   team: 2, home: true,  opponent: "Ingelstads IK 3",   time: "14:00", location: "Furuvallen, Furuby", domare: null, holiday: true },
+    { date: "2026-06-06", type: "series",   team: 2, home: true,  opponent: "Ingelstads IK 3",   time: "14:00", location: "Furuvallen, Furuby", domare: "Hugo", holiday: true },
     { date: "2026-06-07", type: "series",   team: 1, home: false, opponent: "Hovshaga AIF 5",    time: "12:00", location: "Hagavallen 1, Växjö" },
     { date: "2026-06-08", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // M
     { date: "2026-06-09", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T
     { date: "2026-06-11", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T
-    { date: "2026-06-13", type: "series",   team: 1, home: true,  opponent: "IFK Grimslöv 1", time: "10:00",   location: "Furuvallen, Furuby", domare: null },
+    { date: "2026-06-13", type: "series",   team: 1, home: true,  opponent: "IFK Grimslöv 1", time: "10:00",   location: "Furuvallen, Furuby", domare: "Saga H" },
     { date: "2026-06-14", type: "series",   team: 2, home: false, opponent: "Rottne IF 2", time: "15:30" },
     { date: "2026-06-15", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // M
     { date: "2026-06-16", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T
