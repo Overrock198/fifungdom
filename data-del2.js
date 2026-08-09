@@ -31,12 +31,12 @@ const calendarData = {
     { date: "2026-08-18", type: "notice",  title: "Träning inställd – match" },                  // T v34
     { date: "2026-08-20", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T v34
     { date: "2026-08-22", type: "series",  team: 1, home: false, opponent: "Alvesta GOIF 1", time: "11:00", location: "Virdavallen 22, Alvesta" },
-    { date: "2026-08-22", type: "series",  team: 2, home: true,  opponent: "IFK Lammhult 2", time: "14:00", location: "Furuvallen, Furuby" },
+    { date: "2026-08-22", type: "series",  team: 2, home: true,  opponent: "IFK Lammhult 2", time: "14:00", location: "Furuvallen, Furuby", domare: "Ludwig A" },
     { date: "2026-08-24", type: "match-a", opponent: "Skruvs IF",          time: "18:15", bollkallar: null, trainingCancelled: true },  // M v35
     { date: "2026-08-25", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T v35
     { date: "2026-08-27", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T v35
     { date: "2026-08-29", type: "series",  team: 2, home: false, opponent: "Hovshaga AIF 8", time: "14:00", location: "Hagavallen 1, Midingsbråte" },
-    { date: "2026-08-30", type: "series",  team: 1, home: true,  opponent: "Älmhults IF 3",  time: "10:00", location: "Furuvallen, Furuby" },
+    { date: "2026-08-30", type: "series",  team: 1, home: true,  opponent: "Älmhults IF 3",  time: "10:00", location: "Furuvallen, Furuby", domare: "Ludwig A" },
     { date: "2026-08-31", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // M v36
 
     // ── September ──────────────────────────────────────────────────────
@@ -44,7 +44,7 @@ const calendarData = {
     { date: "2026-09-03", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T v36
     { date: "2026-09-05", type: "series",  team: 1, home: false, opponent: "Värnamo Södra FF 1", time: "13:00", location: "Gröndal Arena 11, Värnamo" },
     { date: "2026-09-05", type: "match-a", opponent: "Tingsryd United FC", time: "12:00", bollkallar: null },
-    { date: "2026-09-06", type: "series",  team: 2, home: true,  opponent: "Älmhults IF 4",     time: "10:00", location: "Furuvallen, Furuby" },
+    { date: "2026-09-06", type: "series",  team: 2, home: true,  opponent: "Älmhults IF 4",     time: "10:00", location: "Furuvallen, Furuby", domare: "Ludwig A" },
     { date: "2026-09-07", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // M v37
     { date: "2026-09-08", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T v37
     { date: "2026-09-10", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T v37
