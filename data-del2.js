@@ -2,7 +2,8 @@ const calendarData = {
   team: "Furuby IF",
   season: "2026",
   part: 2,
-  months: ["2026-07", "2026-08", "2026-09", "2026-10"],
+  // Juli renderas inte (nästan tomt) – juli-händelserna ligger kvar nedan men visas ej
+  months: ["2026-08", "2026-09", "2026-10"],
 
   // Lagdefinitioner – namn och serienivå visas i matchrubriken
   teams: {
@@ -14,12 +15,12 @@ const calendarData = {
   // Optional: time, location, holiday (bool), bollkallar, domare, note
 
   events: [
-    // ── Juli ───────────────────────────────────────────────────────────
+    // ── Juli (visas ej – juli är dold i months) ─────────────────────────
     { date: "2026-07-30", type: "cup", title: "Bullerby cup", subtitle: "P14, dag 1" },
     { date: "2026-07-31", type: "cup", title: "Bullerby cup", subtitle: "P14, dag 2" },
 
     // ── Augusti ────────────────────────────────────────────────────────
-    { date: "2026-08-01", type: "cup",     title: "Bullerby cup", subtitle: "P14, dag 3" },
+    { date: "2026-08-01", type: "cup",     title: "Bullerby cup", subtitle: "P14, sista dagen – start 30 juli" },
     { date: "2026-08-15", type: "cup",     title: "Per-Åke Tersmark Cup", subtitle: "Dag 1" },
     { date: "2026-08-16", type: "cup",     title: "Per-Åke Tersmark Cup", subtitle: "Dag 2" },
     { date: "2026-08-16", type: "series",  team: 2, home: false, opponent: "Växjö BK 8",     time: "10:00", location: "Sportfältet Teleborg 22, Växjö" },
