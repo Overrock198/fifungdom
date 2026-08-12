@@ -48,7 +48,7 @@ const calendarData = {
     { date: "2026-09-07", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // M v37
     { date: "2026-09-08", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T v37
     { date: "2026-09-10", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T v37
-    { date: "2026-09-12", type: "series",  team: 1, home: true,  opponent: "Braås GOIF 1",      time: "14:00", location: "Furuvallen, Furuby" },  // flyttad från sön 13/9 10:00
+    { date: "2026-09-13", type: "series",  team: 1, home: true,  opponent: "Braås GOIF 1",      location: "Furuvallen, Furuby" },  // ska flyttas igen – tid/datum oklart, står på söndagen tills vidare (utan time = kursiv/obekräftad)
     { date: "2026-09-13", type: "series",  team: 2, home: false, opponent: "Braås GOIF 3",      time: "10:00", location: "Nya Ulvaskogsvallen 3, Braås" },
     { date: "2026-09-14", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // M v38
     { date: "2026-09-15", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T v38
@@ -59,7 +59,7 @@ const calendarData = {
     { date: "2026-09-21", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // M v39
     { date: "2026-09-22", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T v39
     { date: "2026-09-24", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T v39
-    { date: "2026-09-27", type: "series",  team: 1, home: true,  opponent: "Hovshaga AIF 5",    time: "10:00", location: "Furuvallen, Furuby" },
+    { date: "2026-09-27", type: "series",  team: 1, home: true,  opponent: "Hovshaga AIF 5",    time: "10:00", location: "Furuvallen, Furuby", domare: "Maja H" },
     { date: "2026-09-27", type: "series",  team: 2, home: false, opponent: "Åseda IF 2",        time: "14:30", location: "Profilgruppen Park konstgräs 22, Åseda" },
     { date: "2026-09-28", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // M v40
     { date: "2026-09-29", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T v40
