@@ -27,7 +27,7 @@ const calendarData = {
     { date: "2026-08-16", type: "cup",     title: "Per-Åke Tersmark Cup", subtitle: "Dag 2" },
     { date: "2026-08-16", type: "match-a", opponent: "Flygsfors-Gadd. IF", time: "16:00", bollkallar: null },
     { date: "2026-08-17", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // M v34
-    { date: "2026-08-18", type: "series",  team: 1, home: true,  opponent: "Östers IF 5",    time: "18:30", location: "Furuvallen, Furuby" },
+    { date: "2026-08-18", type: "series",  team: 1, home: true,  opponent: "Östers IF 5",    time: "18:30", location: "Furuvallen, Furuby", domare: "Joakim A" },
     { date: "2026-08-18", type: "notice",  title: "Träning inställd – match" },                  // T v34
     { date: "2026-08-20", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T v34
     { date: "2026-08-22", type: "series",  team: 1, home: false, opponent: "Alvesta GOIF 1", time: "11:00", location: "Virdavallen 22, Alvesta" },
