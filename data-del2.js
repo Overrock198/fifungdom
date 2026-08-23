@@ -31,7 +31,7 @@ const calendarData = {
     { date: "2026-08-18", type: "notice",  title: "Träning inställd – match" },                  // T v34
     { date: "2026-08-20", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T v34
     { date: "2026-08-22", type: "series",  team: 1, home: false, opponent: "Alvesta GOIF 1", time: "11:00", location: "Virdavallen 22, Alvesta" },
-    { date: "2026-08-22", type: "series",  team: 2, home: true,  opponent: "IFK Lammhult 2", time: "14:00", location: "Furuvallen, Furuby", domare: "Ludwig A" },
+    { date: "2026-08-22", type: "series",  team: 2, home: true,  opponent: "IFK Lammhult 2", time: "14:00", location: "Furuvallen, Furuby", domare: "Albin L" },
     { date: "2026-08-24", type: "match-a", opponent: "Skruvs IF",          time: "18:15", bollkallar: null, trainingCancelled: true },  // M v35
     { date: "2026-08-25", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T v35
     { date: "2026-08-27", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T v35
