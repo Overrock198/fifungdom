@@ -35,7 +35,7 @@ const calendarData = {
     { date: "2026-08-24", type: "match-a", opponent: "Skruvs IF",          time: "18:15", bollkallar: null, trainingCancelled: true },  // M v35
     { date: "2026-08-25", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T v35
     { date: "2026-08-27", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T v35
-    { date: "2026-08-29", type: "series",  team: 2, home: false, opponent: "Hovshaga AIF 8", time: "14:00", location: "Hagavallen 1, Midingsbråte" },
+    { date: "2026-08-29", type: "series",  team: 2, home: false, opponent: "Hovshaga AIF 8", time: "14:00", location: "Hagavallen 1, Växjö" },  // furubyif.se anger "Midingsbråte" – fel ort i källan
     { date: "2026-08-30", type: "series",  team: 1, home: true,  opponent: "Älmhults IF 3",  time: "10:00", location: "Furuvallen, Furuby", domare: "Ludwig A" },
     { date: "2026-08-31", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // M v36
 
