@@ -57,7 +57,7 @@ const calendarData = {
     { date: "2026-09-24", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T v39
     { date: "2026-09-27", type: "series",  team: 1, home: true,  opponent: "Hovshaga AIF 5",    time: "10:00", location: "Furuvallen, Furuby", domare: "Maja H" },
     { date: "2026-09-27", type: "series",  team: 2, home: false, opponent: "Åseda IF 2",        time: "14:30", location: "Profilgruppen Park konstgräs 22, Åseda" },
-    { date: "2026-09-28", type: "friendly", home: true, opponent: "Lessebo", subtitle: "9 mot 9", location: "Furuvallen, Furuby" },
+    { date: "2026-09-28", type: "friendly", home: true, opponent: "Lessebo", subtitle: "9 mot 9", location: "Furuvallen, Furuby", domare: "Ludwig A" },
     { date: "2026-09-29", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T v40
     { date: "2026-09-30", type: "series",  team: 1, home: true,  opponent: "Växjö Norra IF 2",  time: "17:30", location: "Furuvallen, Furuby" },  // flyttad från lör 3/10 10:00 borta
 
