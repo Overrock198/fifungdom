@@ -60,6 +60,14 @@ function buildEventCell(events) {
       cls  = ev.team === 1 ? 'ev-series1' : 'ev-series2';
       if (!ev.time) label.classList.add('unconfirmed');
 
+    } else if (ev.type === 'friendly') {
+      text = ev.home === false
+        ? `Träningsmatch: ${ev.opponent} – Furuby`
+        : `Träningsmatch: Furuby – ${ev.opponent}`;
+      if (ev.subtitle) text += ` (${ev.subtitle})`;
+      cls = 'ev-friendly';
+      if (!ev.time) label.classList.add('unconfirmed');
+
     } else if (ev.type === 'match-a') {
       text = `A-LAGET: Furuby – ${ev.opponent}`;
       cls  = 'ev-match-a';
@@ -90,8 +98,8 @@ function buildEventCell(events) {
       td.appendChild(loc);
     }
 
-    // Domare sub-line for home series matches
-    if (ev.type === 'series' && ev.home && ev.domare) {
+    // Domare sub-line for home matches (serie och träningsmatch)
+    if ((ev.type === 'series' || ev.type === 'friendly') && ev.home && ev.domare) {
       const dom = document.createElement('span');
       dom.className = 'ev-location';
       dom.textContent = `Domare: ${ev.domare}`;

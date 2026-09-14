@@ -11,7 +11,7 @@ const calendarData = {
     2: { name: "Furuby 2", level: "nivå 2" },   // PF15-16, Södra Höst (2, pojk)
   },
 
-  // Event types: training, holiday, series, match-a, cup, notice
+  // Event types: training, holiday, series, friendly, match-a, cup, notice
   // Optional: time, location, holiday (bool), bollkallar, domare, note
 
   events: [
@@ -45,22 +45,23 @@ const calendarData = {
     { date: "2026-09-06", type: "series",  team: 2, home: true,  opponent: "Älmhults IF 4",     time: "10:00", location: "Furuvallen, Furuby", domare: "Ludwig A" },
     { date: "2026-09-08", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T v37
     { date: "2026-09-10", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T v37
+    { date: "2026-09-10", type: "friendly", home: true, opponent: "Vederslöv", subtitle: "9 mot 9", location: "Furuvallen, Furuby", domare: "Maja H" },
     { date: "2026-09-12", type: "series",  team: 2, home: false, opponent: "Braås GOIF 3",      time: "10:00", location: "Nya Ulvaskogsvallen 3, Braås" },  // flyttad från sön 13/9
     { date: "2026-09-13", type: "series",  team: 1, home: true,  opponent: "Braås GOIF 1",      time: "10:00", location: "Furuvallen, Furuby", domare: "Saga H" },
     { date: "2026-09-15", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T v38
     { date: "2026-09-17", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T v38
     { date: "2026-09-19", type: "series",  team: 2, home: true,  opponent: "Växjö Norra IF 7",  time: "14:00", location: "Furuvallen, Furuby" },  // flyttad från sön 20/9 10:00
-    { date: "2026-09-20", type: "series",  team: 1, home: false, opponent: "Växjö Norra IF 1",  time: "13:00", location: "Åbo Idrottsplats 21, Växjö" },
     { date: "2026-09-20", type: "match-a", opponent: "Orrefors IF",        time: "12:00", bollkallar: null },
+    { date: "2026-09-21", type: "series",  team: 1, home: true,  opponent: "Växjö Norra IF 1",  time: "18:00", location: "Furuvallen, Furuby" },  // flyttad från sön 20/9 13:00 borta
     { date: "2026-09-22", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T v39
     { date: "2026-09-24", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T v39
     { date: "2026-09-27", type: "series",  team: 1, home: true,  opponent: "Hovshaga AIF 5",    time: "10:00", location: "Furuvallen, Furuby", domare: "Maja H" },
     { date: "2026-09-27", type: "series",  team: 2, home: false, opponent: "Åseda IF 2",        time: "14:30", location: "Profilgruppen Park konstgräs 22, Åseda" },
     { date: "2026-09-29", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T v40
+    { date: "2026-09-30", type: "series",  team: 1, home: true,  opponent: "Växjö Norra IF 2",  time: "17:30", location: "Furuvallen, Furuby" },  // flyttad från lör 3/10 10:00 borta
 
     // ── Oktober ────────────────────────────────────────────────────────
     { date: "2026-10-01", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T v40
-    { date: "2026-10-03", type: "series",  team: 1, home: false, opponent: "Växjö Norra IF 2",  time: "10:00", location: "Fagrabäck IP 12, Växjö" },
     { date: "2026-10-04", type: "series",  team: 2, home: true,  opponent: "Hovmantorp GoIF 2", time: "10:00", location: "Furuvallen, Furuby" },
     { date: "2026-10-06", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T v41
     { date: "2026-10-08", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T v41 (sista)
