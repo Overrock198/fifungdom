@@ -61,9 +61,11 @@ function buildEventCell(events) {
       if (!ev.time) label.classList.add('unconfirmed');
 
     } else if (ev.type === 'friendly') {
+      // Lagnamn utan serienivå – nivån är irrelevant i träningsmatcher
+      const f = ev.team ? (calendarData.teams?.[ev.team]?.name ?? `Furuby ${ev.team}`) : 'Furuby';
       text = ev.home === false
-        ? `Träningsmatch: ${ev.opponent} – Furuby`
-        : `Träningsmatch: Furuby – ${ev.opponent}`;
+        ? `Träningsmatch: ${ev.opponent} – ${f}`
+        : `Träningsmatch: ${f} – ${ev.opponent}`;
       if (ev.subtitle) text += ` (${ev.subtitle})`;
       cls = 'ev-friendly';
       if (!ev.time) label.classList.add('unconfirmed');
