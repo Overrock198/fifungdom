@@ -50,7 +50,7 @@ const calendarData = {
     { date: "2026-09-13", type: "series",  team: 1, home: true,  opponent: "Braås GOIF 1",      time: "10:00", location: "Furuvallen, Furuby", domare: "Saga H" },
     { date: "2026-09-15", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T v38
     { date: "2026-09-17", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T v38
-    { date: "2026-09-19", type: "series",  team: 2, home: true,  opponent: "Växjö Norra IF 7",  time: "14:00", location: "Furuvallen, Furuby" },  // flyttad från sön 20/9 10:00
+    { date: "2026-09-19", type: "series",  team: 2, home: true,  opponent: "Växjö Norra IF 7",  time: "14:00", location: "Furuvallen, Furuby", domare: "Måns A" },  // flyttad från sön 20/9 10:00
     { date: "2026-09-20", type: "match-a", opponent: "Orrefors IF",        time: "12:00", bollkallar: null },
     { date: "2026-09-21", type: "series",  team: 1, home: true,  opponent: "Växjö Norra IF 1",  time: "18:00", location: "Furuvallen, Furuby" },  // flyttad från sön 20/9 13:00 borta
     { date: "2026-09-22", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T v39
@@ -63,7 +63,7 @@ const calendarData = {
 
     // ── Oktober ────────────────────────────────────────────────────────
     { date: "2026-10-01", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T v40
-    { date: "2026-10-04", type: "series",  team: 2, home: true,  opponent: "Hovmantorp GoIF 2", time: "10:00", location: "Furuvallen, Furuby" },
+    { date: "2026-10-04", type: "series",  team: 2, home: true,  opponent: "Hovmantorp GoIF 2", time: "10:00", location: "Furuvallen, Furuby", domare: "Hugo A" },
     { date: "2026-10-06", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T v41
     { date: "2026-10-08", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T v41 (sista)
   ]
