@@ -104,7 +104,15 @@ function buildEventCell(events) {
     if ((ev.type === 'series' || ev.type === 'friendly') && ev.home && ev.domare) {
       const dom = document.createElement('span');
       dom.className = 'ev-location';
-      dom.textContent = `Domare: ${ev.domare}`;
+      dom.textContent = 'Domare: ';
+      // domare: "Namn" eller lista; { name, warn: true } visas i rött (t.ex. dubbelbokning)
+      [ev.domare].flat().forEach((d, i) => {
+        if (i) dom.appendChild(document.createTextNode(', '));
+        const n = document.createElement('span');
+        n.textContent = d.name ?? d;
+        if (d.warn) n.className = 'warn';
+        dom.appendChild(n);
+      });
       td.appendChild(dom);
     }
 

@@ -100,6 +100,7 @@ td    { padding: 3px 3px; vertical-align: top; }
 .ev-label { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .ev-time     { font-size: 11px; color: #555; flex-shrink: 0; white-space: nowrap; }
 .ev-location { display: block; font-size: 10.5px; color: #888; font-style: italic; }
+.ev-location .warn { color: var(--red); font-weight: 600; }
 
 /* ── Event type colours ──────────────────────────────────────────── */
 .ev-training { color: #333; }

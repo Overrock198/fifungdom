@@ -64,7 +64,7 @@ const calendarData = {
 
     // ── Oktober ────────────────────────────────────────────────────────
     { date: "2026-10-01", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T v40
-    { date: "2026-10-04", type: "series",  team: 2, home: true,  opponent: "Hovmantorp GoIF 2", time: "10:00", location: "Furuvallen, Furuby", domare: "Hugo A" },
+    { date: "2026-10-04", type: "series",  team: 2, home: true,  opponent: "Hovmantorp GoIF 2", time: "10:00", location: "Furuvallen, Furuby", domare: ["Albin L", { name: "Hugo A", warn: true }] },  // dubbelbokad – reds ut
     { date: "2026-10-06", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T v41
     { date: "2026-10-08", type: "training", time: "17:30-18:45", title: "Träning Furuvallen" },  // T v41 (sista)
   ]
