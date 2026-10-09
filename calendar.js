@@ -193,3 +193,41 @@ const container = document.getElementById('calendar');
 for (const m of calendarData.months) {
   container.appendChild(renderMonth(m));
 }
+
+// Byt mellan Del 1 och Del 2 med svep (iPad/mobil) eller piltangenter.
+// Föregående/nästa del läses från länkarna i .part-nav.
+(function () {
+  const links  = [...document.querySelectorAll('.part-nav a')];
+  const active = links.findIndex(a => a.classList.contains('active'));
+  if (active < 0) return;
+
+  function go(step) {
+    const target = links[active + step];
+    if (target) location.href = target.href;
+  }
+
+  document.addEventListener('keydown', e => {
+    if (e.altKey || e.ctrlKey || e.metaKey || e.shiftKey) return;
+    if (e.key === 'ArrowLeft')  go(-1);
+    if (e.key === 'ArrowRight') go(1);
+  });
+
+  // Bara tydligt vågräta svep med ett finger räknas, så vanlig scroll och nypzoom påverkas inte.
+  let startX = null, startY = 0;
+  document.addEventListener('touchstart', e => {
+    if (e.touches.length !== 1) { startX = null; return; }
+    startX = e.touches[0].clientX;
+    startY = e.touches[0].clientY;
+  }, { passive: true });
+
+  document.addEventListener('touchend', e => {
+    if (startX === null) return;
+    const t  = e.changedTouches[0];
+    const dx = t.clientX - startX;
+    const dy = t.clientY - startY;
+    startX = null;
+    if (window.visualViewport && visualViewport.scale > 1.01) return; // inzoomad: låt panorering vara
+    if (Math.abs(dx) < 60 || Math.abs(dx) < Math.abs(dy) * 2) return;
+    go(dx < 0 ? 1 : -1); // svep vänster → nästa del
+  }, { passive: true });
+})();
